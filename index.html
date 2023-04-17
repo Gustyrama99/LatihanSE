@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <section id="header">
+      <nav class="nav">
+        <img src="assets/Logo.png" alt="logo" class="logo">
+
+        <div class="group-btn">
+          <a href="./index.html">Home</a>
+          <a href="profile.html">Our Profile</a>
+          <a href="./project.html">Portfolio</a>
+          <a href="#form" class="active">Message Us</a>
+        </div>
+
+     
+      </nav>
+
+    </section>
+
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-title">
+          <h1>Hello <span id="title-name"></span>, Welcome to our Website! </h1>
+          <h3>This our Official Website</h3>
+        </div>
+        <div>
+          <img src="assets/school.jpg" alt="background-image" width="100%x" height="600px">
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="content-container">
+          <div class="title">
+              <h1>Our branch</h1>
+          </div>
+          <div class="content-main">
+              <div class="content">
+                  <img class="content-img" src="assets/Jakarta2.jpg" alt="Jakarta's icon">
+                  <div class="overlay">
+                      <p class="content-text">Jakarta</p>
+                  </div>
+              </div>
+              <div class="content">
+                  <img class="content-img" src="assets/bandung.jpg" alt="Bandung's Flyover">
+                  <div class="overlay">
+                      <p class="content-text">Bandung</p>
+                  </div>
+              </div>
+              <div class="content">
+                  <img class="content-img" src="assets/surabaya.jpg" alt="Surabaya's Landmark">
+                  <div class="overlay">
+                      <p class="content-text">Surabaya</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section id="form">
+    <div class="form-container">
+        <div class="title">
+            <h1>Message Us</h1>
+        </div>
+        <div class="forms">
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="input" name="name" placeholder="Your name here">
+              <span></span>
+              <span id="warning-name"></span>
+        
+              <label for="dob">Date of birth:</label>
+              <div class="input-with-icon">
+                  <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+                  <span></span>
+                  <span id="warning-dob"></span>
+                  <span class="calendar-icon">&#x1F4C5;</span>
+              </div>
+        
+              <label for="gender">Gender: </label>
+              <div id="gender" class="gender-selection">
+                  <input type="radio" id="male" name="gender" value="Male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="Female">
+                  <label for="female">Female</label>
+              </div>
+              <span></span>
+              <span id="warning-gender"></span>
+
+        
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="msg" placeholder="Enter your message here.."></textarea>
+              <span></span>
+              <span id="warning-msg"></span>  
+            
+
+              <input type="button" value="Submit" onclick="showResult()">
+            </form>
+
+            <div class="result">
+              <h3>Result:</h3>
+              <p>Current time: <span id="current-time"></span></p>
+              <p>Name: <span id="result-name"></span></p>
+              <p>Date of birth: <span id="result-dob"></span></p>
+              <p>Gender: <span id="result-gender"></span></p>
+              <p>Message: <span id="result-msg"></span></p>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</section>          
+  
+  
+  
+
+  
+  </main>
+  <br>
+  <footer>
+    <section id="footer">
+        <nav class="nav-footer">
+            <img src="./assets/logo.png" alt="logo" class="logo">
+            <p>&copy; 2023 GRP learning. All rights reserved.</p>
+        </nav>
+    </section>
+</footer>
+  <script src="/javascript/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+
+  
+</body>
+</html>
